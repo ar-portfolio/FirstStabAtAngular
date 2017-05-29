@@ -1,0 +1,3 @@
+<h1>{{title}}</h1>
+<button (click)="addItem()">Add Item</button>
+<item *ngFor="let item of items" [item]="item" (cancelItemRequest)="deleteItem($event)"></item>
